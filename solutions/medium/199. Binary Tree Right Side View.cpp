@@ -1,8 +1,8 @@
 /* 
  * Problem: 199. Binary Tree Right Side View [medium]
- * Source: https://leetcode.com/problems/binary-tree-right-side-view/description/
- * Solver: Baur Krykpayev
- * Date  : 11/16/2017
+ * Source : https://leetcode.com/problems/binary-tree-right-side-view/description/
+ * Solver : Baur Krykpayev
+ * Date   : 11/16/2017
  */
  
 /**

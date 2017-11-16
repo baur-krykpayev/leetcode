@@ -1,8 +1,8 @@
 /* 
  * Problem: 338. Counting Bits [medium]
- * Source: https://leetcode.com/problems/counting-bits/description/
- * Solver: Baur Krykpayev
- * Date  : 11/16/2017
+ * Source : https://leetcode.com/problems/counting-bits/description/
+ * Solver : Baur Krykpayev
+ * Date   : 11/16/2017
  */
  
 class Solution {
