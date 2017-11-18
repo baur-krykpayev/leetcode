@@ -1,6 +1,6 @@
 /* 
  * Problem: 654. Maximum Binary Tree[medium]
- * Source : https://leetcode.com/problems/find-right-interval/description/
+ * Source : https://leetcode.com/problems/maximum-binary-tree/description/
  * Solver : Baur Krykpayev
  * Date   : 11/18/2017
  */
