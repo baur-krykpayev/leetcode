@@ -1,5 +1,5 @@
 /* 
- * Problem: 442. Find All Duplicates in an Arra[medium]
+ * Problem: 442. Find All Duplicates in an Array[medium]
  * Source : https://leetcode.com/problems/find-all-duplicates-in-an-array/description/
  * Solver : Baur Krykpayev
  * Date   : 12/18/2017
