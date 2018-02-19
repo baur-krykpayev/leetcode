@@ -1,6 +1,6 @@
 /* 
  * Problem: 451. Sort Characters By Frequency[medium]
- * Source : https://leetcode.com/problems/sort-characters-by-frequency/discuss/93404/C++-O(n)-solution-without-sort()
+ * Source : https://leetcode.com/problems/sort-characters-by-frequency/description/
  * Solver : Baur Krykpayev
  * Date   : 2/18/2018
  */
