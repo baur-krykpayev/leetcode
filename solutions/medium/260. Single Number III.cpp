@@ -10,9 +10,10 @@ public:
     vector<int> singleNumber(vector<int>& nums) 
     {
         int xr = 0;
+        vector<int> ret (2, 0);
+        int pos = 0;
         for (int num : nums) {xr ^= num;}
         
-        int pos = 0;
         while (xr)
         {
             if (xr & 1)
@@ -23,7 +24,6 @@ public:
             pos++;
         }
         
-        vector<int> ret (2, 0);
         for (int num : nums)
         {
             if (num & (1<<pos))
