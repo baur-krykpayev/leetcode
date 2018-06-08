@@ -2,7 +2,7 @@
  * Problem: 4. Median of Two Sorted Arrays [hard]
  * Source : https://leetcode.com/problems/median-of-two-sorted-arrays/description/
  * Solver : Baur Krykpayev
- * Date   : 6/5/2018
+ * Date   : 6/6/2018
  */
 
 class Solution {
