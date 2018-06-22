@@ -1,26 +1,26 @@
 /* 
- * Problem: 75. Sort Colors[medium]
+ * Problem: 75. Sort Colors [medium]
  * Source : https://leetcode.com/problems/sort-colors/description/
  * Solver : Baur Krykpayev
- * Date   : 2/21/2018
+ * Date   : 06/21/2018
  */
-
+ 
 class Solution {
 public:
     void sortColors(vector<int>& nums) 
     {
-        int colors[3] = {0, 0, 0};
-        for (auto &num : nums)
+        int l = 0, m = 0, r = nums.size()-1;
+        
+        while (m <= r)
         {
-            colors[num] += 1;
-        }
-
-        int pos = 0;
-        for (int color = 0; color < 3; color++)
-        {
-            while (colors[color]--)
+            if (nums[m] == 1) {m++;}
+            else if (nums[m] == 0) 
             {
-                nums[pos++] = color;
+                swap(nums[m++], nums[l++]);
+            }
+            else
+            {
+                swap(nums[m], nums[r--]);
             }
         }
     }
