@@ -14,6 +14,7 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
+
 class Solution {
 public:
     bool findTarget(TreeNode* root, int k) 
