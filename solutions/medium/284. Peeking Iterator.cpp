@@ -1,0 +1,63 @@
+/* 
+ * Problem: 284. Peeking Iterator [medium]
+ * Source : https://leetcode.com/problems/peeking-iterator/description/
+ * Solver : Baur Krykpayev
+ * Date   : 07/21/2018
+ */
+// Below is the interface for Iterator, which is already defined for you.
+// **DO NOT** modify the interface for Iterator.
+class Iterator {
+    struct Data;
+    Data* data;
+public:
+    Iterator(const vector<int>& nums);
+    Iterator(const Iterator& iter);
+    virtual ~Iterator();
+    // Returns the next element in the iteration.
+    int next();
+    // Returns true if the iteration has more elements.
+    bool hasNext() const;
+};
+
+
+class PeekingIterator : public Iterator {
+public:
+    PeekingIterator(const vector<int>& nums) : Iterator(nums) {
+        // Initialize any member here.
+        // **DO NOT** save a copy of nums and manipulate it directly.
+        // You should only use the Iterator interface methods.
+        for (int i = nums.size()-1; i >= 0; i--)
+        {
+            stk.push(nums[i]);
+        }
+    }
+
+    // Returns the next element in the iteration without advancing the iterator.
+    int peek() 
+    {
+        return stk.top();
+    }
+
+    // hasNext() and next() should behave the same as in the Iterator interface.
+    // Override them if needed.
+    int next() 
+    {
+        int ans = -1; 
+            
+        if (hasNext())
+        {
+            ans = stk.top();
+            stk.pop();
+        }
+        
+        return ans;
+    }
+
+    bool hasNext() 
+    {
+        return !(stk.size() == 0);
+    }
+    
+private:
+    stack<int> stk;
+};
